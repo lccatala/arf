@@ -195,6 +195,7 @@ if __name__ == '__main__':
 
     np.save(LABELS_OUT_FILE, arr=full_labels)
     np.save(IMAGES_OUT_FILE, arr=full_images)
+    print(full_labels[3:])
 
     unique = int(full_images.shape[0] / 5)
     index = unique + 1
